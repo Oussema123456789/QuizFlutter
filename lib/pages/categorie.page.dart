@@ -8,10 +8,10 @@ class CategoryPage extends StatefulWidget {
   const CategoryPage({Key? key}) : super(key: key);
 
   @override
-  _CategoryScreenState createState() => _CategoryScreenState();
+  _CategoryPageState createState() => _CategoryPageState();
 }
 
-class _CategoryScreenState extends State<CategoryPage> with SingleTickerProviderStateMixin {
+class _CategoryPageState extends State<CategoryPage> with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _fadeAnimation;
   String selectedDifficulty = "easy";
