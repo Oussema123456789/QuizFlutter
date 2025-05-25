@@ -4,14 +4,14 @@ import 'package:provider/provider.dart';
 import 'package:quiz_app/main.dart';
 import 'package:quiz_app/pages/question.page.dart';
 
-class CategoryPage extends StatefulWidget {
-  const CategoryPage({Key? key}) : super(key: key);
+class CategoriePage extends StatefulWidget {
+  const CategoriePage({Key? key}) : super(key: key);
 
   @override
   _CategoryPageState createState() => _CategoryPageState();
 }
 
-class _CategoryPageState extends State<CategoryPage> with SingleTickerProviderStateMixin {
+class _CategoryPageState extends State<CategoriePage> with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _fadeAnimation;
   String selectedDifficulty = "easy";

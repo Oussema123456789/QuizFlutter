@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text("Login avec succée")),
         );
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => CategoryPage()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => CategoriePage()));
       } on FirebaseAuthException catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text("email ou mot de passe incorrect")),
